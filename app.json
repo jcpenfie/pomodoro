@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "pomodoro",
-    "slug": "pomodoro",
+    "slug": "pomodorobyjc",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -29,8 +29,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "52703a5a-9d67-44ee-bef8-d6749d06a82b"
+        "projectId": "12f55546-286d-4efe-a70d-2c70875d2dbc"
       }
-    }
+    },
+    "owner": "jcpenaf"
   }
 }

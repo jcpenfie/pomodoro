@@ -51,7 +51,7 @@ export default function App() {
       //Ejecutar el timer
       interval = setInterval(() => {
         setTime(time - 1);
-      }, 10);
+      }, 1000);
     } else {
       clearInterval(interval);
     }
