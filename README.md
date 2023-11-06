@@ -4,7 +4,7 @@ Cuyo objetivo es usar la famosa [Técnica Pomodoro](https://es.wikipedia.org/wik
 Algo extra que he añadido y qu no venía en el tutorial es un botón para poner música de ambiente, la cual se puede activar y desactivar cuando quiera. También respecto al sonido y algo extra que he añadido ha sido un sonido de alarma cuando termina el contador.
 
 ## Imagenes[
-![</span><span>Primera pantalla de la aplicación con un contador de 25 minutos</span><span>]</span><span>(</span><span>](https://raw.githubusercontent.com/jcpenfe/pomodoro/master/assets/imagesDoc/pomodoro1.jpg)https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png</span><span>)
+<span>![</span><span>Primera pantalla de la aplicación con un contador de 25 minutos</span><span>]</span><span>(</span><span>](https://raw.githubusercontent.com/jcpenfe/pomodoro/master/assets/imagesDoc/pomodoro1.jpg)https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png</span><span>)</span>
 https://raw.githubusercontent.com/jcpenfe/pomodoro/master/assets/imagesDoc/pomodoro1.jpg
 https://raw.githubusercontent.com/jcpenfe/pomodoro/master/assets/imagesDoc/pomodoro2.jpg
 https://raw.githubusercontent.com/jcpenfe/pomodoro/master/assets/imagesDoc/pomodoro3.jpg
