@@ -10,6 +10,7 @@ import Header from "./src/components/Header";
 import Timer from "./src/components/Timer";
 import { Audio } from "expo-av";
 import { Entypo } from "@expo/vector-icons";
+import { StatusBar } from "expo-status-bar";
 
 const colors = ["#F7DC6F", "#A2D9CE", "#D7BDE2"];
 
@@ -124,6 +125,7 @@ export default function App() {
           paddingTop: Platform.OS === "android" && 30,
         }}
       >
+      <StatusBar/>
         <View
           style={{
             flexDirection: "row",
