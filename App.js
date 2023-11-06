@@ -22,29 +22,6 @@ export default function App() {
   const [isMusic, setIsMusic] = useState(false);
   const [soundInstance, setSoundInstance] = useState(null);
 
-  async function playSoundFinish() {
-    if (soundInstance) {
-      try {
-        await soundInstance.replayAsync(); // Vuelve a reproducir el sonido existente
-      } catch (error) {
-        // Maneja el error si ocurriera durante la reproducción
-        console.error("Error al reproducir el sonido:", error);
-      }
-    } else {
-      // Si no hay una instancia del sonido, crea una nueva
-      const { sound } = await Audio.Sound.createAsync(
-        require("./assets/finish.mp3")
-      );
-      setSoundInstance(sound); // Establece la instancia del sonido
-      try {
-        await sound.playAsync(); // Reproduce el sonido
-      } catch (error) {
-        // Maneja el error si ocurriera durante la reproducción
-        console.error("Error al reproducir el sonido:", error);
-      }
-    }
-  }
-
   useEffect(() => {
     let interval = null;
 
@@ -52,7 +29,7 @@ export default function App() {
       //Ejecutar el timer
       interval = setInterval(() => {
         setTime(time - 1);
-      }, 1000);
+      }, 1);
     } else {
       clearInterval(interval);
     }
@@ -60,7 +37,7 @@ export default function App() {
     if (time === 0) {
       setIsActive(false);
       setIsWorking((prev) => !prev);
-      setTime(isWorking ? 300 : 1500);
+      setTime(isWorking ? 1500 : 300);
       playSoundFinish();
     }
 
@@ -77,20 +54,15 @@ export default function App() {
     }
   }, [isMusic]);
 
-  function handleStarStop() {
-    playSound();
-    setIsActive(!isActive);
-  }
-
   async function playSound() {
     const { sound } = await Audio.Sound.createAsync(
-      require("./assets/click.wav")
+      require("./assets/sounds/click.wav")
     );
     await sound.playAsync();
   }
   async function playSoundFinish() {
     const { sound } = await Audio.Sound.createAsync(
-      require("./assets/finish.mp3")
+      require("./assets/sounds/finish.mp3")
     );
     await sound.setVolumeAsync(1.0);
     await sound.playAsync();
@@ -99,7 +71,7 @@ export default function App() {
   async function playSoundAmbient() {
     if (soundInstance === null) {
       const { sound } = await Audio.Sound.createAsync(
-        require("./assets/ambient.wav"),
+        require("./assets/sounds/ambient.wav"),
         { isMuted: false, isLooping: true }
       );
       setSoundInstance(sound);
@@ -110,6 +82,7 @@ export default function App() {
   }
 
   function handleStarStop() {
+    playSound();
     setIsActive(!isActive);
   }
 
@@ -125,7 +98,7 @@ export default function App() {
           paddingTop: Platform.OS === "android" && 30,
         }}
       >
-      <StatusBar/>
+        <StatusBar />
         <View
           style={{
             flexDirection: "row",
@@ -135,7 +108,10 @@ export default function App() {
         >
           <Text style={styles.text}>Pomodoro</Text>
           <Entypo
-            onPress={() => setIsMusic(!isMusic)}
+            onPress={() => {
+              setIsMusic(!isMusic);
+              playSound();
+            }}
             name={isMusic ? "sound" : "sound-mute"}
             size={24}
             color={isMusic ? "black" : "#333"}
@@ -145,6 +121,7 @@ export default function App() {
           currentTime={currentTime}
           setCurrentTime={setCurrentTime}
           setTime={setTime}
+          playSound={playSound}
         />
         <Timer time={time} isActive={isActive} />
         <TouchableOpacity onPress={handleStarStop} style={styles.button}>
