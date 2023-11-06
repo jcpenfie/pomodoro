@@ -3,7 +3,8 @@ Pomodoro es una aplicación móvil creada con [React Native](https://reactnative
 Cuyo objetivo es usar la famosa [Técnica Pomodoro](https://es.wikipedia.org/wiki/T%C3%A9cnica_Pomodoro). 
 Algo extra que he añadido y qu no venía en el tutorial es un botón para poner música de ambiente, la cual se puede activar y desactivar cuando quiera. También respecto al sonido y algo extra que he añadido ha sido un sonido de alarma cuando termina el contador.
 
-## Imagenes[
+## Imagenes
+
 [Aquí la descripción de la imagen por si no carga](https://raw.githubusercontent.com/jcpenfe/pomodoro/master/assets/imagesDoc/pomodoro1.jpg)
 
 
