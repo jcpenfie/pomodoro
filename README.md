@@ -73,7 +73,7 @@ npm update
 |  ---       |            ---                    |           ---             |
 | Comand    | ``` npx expo start --android```   | ```npx expo start --ios```|
 
-## 🧑‍💻 Contributors 🧑‍💻
+## 🧑‍💻 Contributions 🧑‍💻
 All the contributions are welcomes.
 
 
