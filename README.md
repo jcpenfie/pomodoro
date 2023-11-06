@@ -19,7 +19,7 @@ Algo extra que he añadido y que no venía en el tutorial es un botón para pone
 
 
 ## 🚀 Instalación 🚀
-Obviamente se necesita tener previamente los comando NPM y EXPO
+Obviamente se necesita tener previamente los comando [NPM](https://nodejs.org y EXPO
 
 1. Haz un clone del proyecto:
 ```
@@ -57,7 +57,7 @@ Something extra that I have added and that was not included in the tutorial is a
 
 
 ## 🚀 Instalation 🚀
-Obviously you need to have installed NPM and EXPO
+Obviously you need to have installed [NPM](https://nodejs.org) and EXPO
 
 1. Do a clone of the proyect:
 ```
