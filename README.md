@@ -32,4 +32,4 @@ npm update
 Las contribuciones son bienvenidas.
 
 ##
-Crado por `jcpenfie`
+Creado por `jcpenfie`
