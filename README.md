@@ -17,12 +17,8 @@ npm update
 
 o
 
-| Plataforma | Android    | ios    |
-| :---:   | :---: | :---: |
-| Comando | ```
-npx expo start --android
-```   | ```
-npx expo start --ios
-```   |
+| Plataforma | Android                           | ios                       |
+------------------------------------------------------------------------------
+| Comando    | ``` npx expo start --android```   | ```npx expo start --ios```|
 ## Contribuciones
 Las contribuciones son bienvenidas.
