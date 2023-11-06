@@ -14,13 +14,15 @@ git clone https://github.com/jcpenfie/pomodoro
 npm update
 ```
 3. Inicia el proyecto en android o en ios
-```
-npx expo start --android
-```
-o
-```
-npx expo start --ios
-```
 
+o
+
+| Plataforma | Android    | ios    |
+| :---:   | :---: | :---: |
+| Comando | ```
+npx expo start --android
+```   | ```
+npx expo start --ios
+```   |
 ## Contribuciones
 Las contribuciones son bienvenidas.
