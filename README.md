@@ -1,6 +1,6 @@
 ## Language
 
-* [Español](#Lists)
+* [Español](#Español)
 * [English](#Tables)
 
 ###### Español
