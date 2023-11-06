@@ -5,7 +5,7 @@ Algo extra que he añadido y qu no venía en el tutorial es un botón para poner
 
 ## Imagenes
 
-[Aquí la descripción de la imagen por si no carga](https://raw.githubusercontent.com/jcpenfe/pomodoro/master/assets/imagesDoc/pomodoro1.jpg)
+![Aquí la descripción de la imagen por si no carga](https://raw.githubusercontent.com/jcpenfe/pomodoro/master/assets/imagesDoc/pomodoro1.jpg)
 
 
 
