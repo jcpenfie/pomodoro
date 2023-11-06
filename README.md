@@ -5,13 +5,10 @@ Algo extra que he añadido y qu no venía en el tutorial es un botón para poner
 
 ## Imagenes
 
-![Aquí la descripción de la imagen por si no carga](https://github.com/jcpenfie/pomodoro/blob/master/assets/imagesDoc/pomodor2.jpg)
+![Primera vista de la aplicación con un contador de 25 minutos con un botón para parar o continuar](https://github.com/jcpenfie/pomodoro/blob/master/assets/imagesDoc/pomodor1.jpg)
+![Opción de descanso de 5 minutos con un botón para parar o continuar](https://github.com/jcpenfie/pomodoro/blob/master/assets/imagesDoc/pomodor2.jpg)
+![Opción de descanso de 15 minutos con un botón para parar o continuar](https://github.com/jcpenfie/pomodoro/blob/master/assets/imagesDoc/pomodor3.jpg)
 
-
-
-https://raw.githubusercontent.com/jcpenfe/pomodoro/master/assets/imagesDoc/pomodoro1.jpg
-https://raw.githubusercontent.com/jcpenfe/pomodoro/master/assets/imagesDoc/pomodoro2.jpg
-https://raw.githubusercontent.com/jcpenfe/pomodoro/master/assets/imagesDoc/pomodoro3.jpg
 
 ## Instalación
 Obviamente se necesita tener previamente los comando NPM y EXPO
