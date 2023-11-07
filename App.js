@@ -4,7 +4,6 @@ import {
   Text,
   TouchableOpacity,
   View,
-  RefreshControl,
 } from "react-native";
 import { useEffect, useState } from "react";
 import Header from "./src/components/Header";
@@ -31,7 +30,7 @@ export default function App() {
       //Ejecutar el timer
       interval = setInterval(() => {
         setTime(time - 1);
-      }, 1);
+      }, 1000);
     } else {
       clearInterval(interval);
     }
@@ -39,7 +38,15 @@ export default function App() {
     if (time === 0) {
       setIsActive(false);
       setIsWorking((prev) => !prev);
-      setTime(isWorking ? 1500 : 300);
+      setTime(
+        currentTime === 0
+          ? 1500
+          : currentTime === 1
+          ? 300
+          : currentTime === 2
+          ? 900
+          : 0
+      );
       playSoundFinish();
     }
 
