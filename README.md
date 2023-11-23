@@ -19,7 +19,7 @@ Algo extra que he añadido y que no venía en el tutorial es un botón para pone
 
 
 ## 🚀 Instalación 🚀
-Obviamente se necesita tener previamente los comando [NPM](https://nodejs.org y EXPO
+Obviamente se necesita tener previamente los comando [NPM](https://nodejs.org) y EXPO
 
 1. Haz un clone del proyecto:
 ```
